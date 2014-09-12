@@ -14,3 +14,6 @@ add a webhook to your service in pagerduty point to this link
 httpauth webhook receiver
 http://username:password@nagios.yourwebsite.com/nagios/cgi-bin/pd-nagios-connector.cgi
 ```
+
+# future
+more incident identifier from webhook will be written into function

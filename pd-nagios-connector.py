@@ -48,11 +48,9 @@ for m in message["messages"]:
                 username = m["data"]["incident"]["assigned_to_user"]["name"]
 
                 if service == "":
-                        sys.stderr.write("up one\n")
                         if checkackstatus(hostname, ""):
                                 subprocess.call("/bin/echo \"[%d] ACKNOWLEDGE_HOST_PROBLEM;%s;2;1;0;%s;acknowledged by nagctl\n\" > %s" % (date, hostname, username, cmd), shell=True)
                 else:
-                        sys.stderr.write("up two\n")
                         if checkackstatus(hostname, service):
                                 subprocess.call("/bin/echo \"[%d] ACKNOWLEDGE_SVC_PROBLEM;%s;%s;2;1;0;%s;acknowledged by nagctl\n\" > %s" % (date, hostname, service, username, cmd), shell=True)
 

@@ -1,7 +1,7 @@
 # Pagerduty nagios connector
 
 ## only thing to change is the path to nagios.cmd
-## update, now it can detect to avoid double acknowledgement on nagios, you also need to change the path for status.dat file in the script
+###### update, now it can detect to avoid double acknowledgement on nagios, you also need to change the path for status.dat file in the script
 
 ### step 1 
 rename .ext to .cgi
